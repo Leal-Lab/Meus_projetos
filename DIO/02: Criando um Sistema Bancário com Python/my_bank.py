@@ -30,7 +30,7 @@ while True:
     saque = float(input('Digite o valor a retirar: '))
    
     if saque > 0 and saque <= 500 and numero_saques <= 3:
-      saldo = saldo - saque
+      saldo -= saque
       numero_saques += 1
       extrato += f'Sacado: R${saque:.2f} ({numero_saques}/3̣)\n'
     else:

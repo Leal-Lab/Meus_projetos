@@ -15,7 +15,7 @@ saldo = 0
 limite = 500
 extrato = ""
 saque = ""
-limite_saques = 3
+numero_saques = 0
 
 while True:
   opcao = input(menu)
@@ -28,19 +28,19 @@ while True:
 
   elif opcao == "2":
     saque = float(input('Digite o valor a retirar: '))
-    if saque > 0 <= 500 and limite_saques <= 3:
-      saldo = saque - saldo
-      limite_saques += 1
-      extrato += f' Sacado: R${saque:.2f} ({limite_saques}/3̣)\n'
+   
+    if saque > 0 and saque <= 500 and numero_saques <= 3:
+      saldo = saldo - saque
+      numero_saques += 1
+      extrato += f'Sacado: R${saque:.2f} ({numero_saques}/3̣)\n'
     else:
       print ("Opcao invalida no momento")
       
-  # elif opcao == "3":
-  #   print ("extrato")
+  elif opcao == "3":
+    print (extrato)
     
-  #   for input in deposito:
-  #     print (f'Deposito de R$ {deposito}')
-    
+    print(f'Saldo atual:   R${saldo}')
+
   elif opcao == "0":
     break
 

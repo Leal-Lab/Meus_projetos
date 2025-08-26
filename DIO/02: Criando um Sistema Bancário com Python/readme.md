@@ -12,3 +12,4 @@
     Essa operação deve listar todos os depositos e saques realizados na conta. No fim da listagem deve ser exibido o saldo atual da conta. Se o extrato estiver em branco deve exibir a mensagem: Não foram realizadas movimentações.
 
     Os valores devem ser exibidos utilizando o formato R$.
+    
